@@ -83,12 +83,12 @@ first_order_for_each_user = []
 
 ```
 
-first =
+first =users[0][:orders][0]
 sec =users[1][:orders][0]
 thr =users[2][:orders][0]
 
 first_order_for_each_user.push(first, sec, thr)
-users[0][:orders][0]
+
 
  p first_order_for_each_user
 
