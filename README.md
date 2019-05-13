@@ -24,8 +24,11 @@ students = [
 upper_case_full_names = []
 
 ```
-
-### Answer
+name = "#{students[0][:first_name].upcase} #{students[0][:last_name].upcase}"
+name1 = "#{students[1][:first_name].upcase} #{students[1][:last_name].upcase}"
+name2 = "#{students[2][:first_name].upcase} #{students[2][:last_name].upcase}"
+upper_case_full_names.push(name, name1, name2)
+p upper_case_full_names.push
 
 ```rb
 
@@ -80,7 +83,14 @@ first_order_for_each_user = []
 
 ```
 
-### Answer
+first =
+sec =users[1][:orders][0]
+thr =users[2][:orders][0]
+
+first_order_for_each_user.push(first, sec, thr)
+users[0][:orders][0]
+
+ p first_order_for_each_user
 
 ```rb
 
@@ -213,6 +223,12 @@ most_expensive_products_by_store = []
 ```
 
 ### Answer
+
+store_name= stores[0][:store_name]
+most_expensive_product= stores[:products][0][:description][0]
+price=stores[0][:products][1]
+p most_expensive_products_by_store.push(#{store_name} #{most_expensive_product} #{price},st2store_name,store_name)
+
 
 ```rb
 
